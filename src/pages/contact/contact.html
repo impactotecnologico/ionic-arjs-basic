@@ -1,17 +1,23 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+  
+  <!-- embedded arjs ='sourceType: webcam;' -->
+  <a-scene  > 
+    
+    <a-sphere (click)="clickEsfera()" position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+    <a-box position="-1 0.5 -3" rotation="0 45 0" width="1" height="1" depth="1" color="#4CC3D9"></a-box>
+    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+    <a-sky color="#ECECEC"></a-sky>
+    
+    <!--
+    <a-marker-camera preset='hiro'>
+      <a-box position='0 0.5 0' material='color: black;'></a-box>
+
+
+    </a-marker-camera>
+
+    -->
+  </a-scene>
+
+
 </ion-content>

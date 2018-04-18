@@ -11,4 +11,8 @@ export class ContactPage {
 
   }
 
+  clickEsfera () {
+      console.log("En click");
+  }
+
 }

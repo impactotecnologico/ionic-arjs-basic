@@ -18,6 +18,12 @@
   <!-- cordova.js required for cordova apps (remove if not needed) -->
   <script src="cordova.js"></script>
 
+<!--
+  <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  <script src="https://unpkg.com/aframe-arrow-component@1.0.0/index.js"></script>
+-->
+
   <!-- un-comment this code to enable service worker
   <script>
     if ('serviceWorker' in navigator) {
@@ -28,12 +34,21 @@
   </script>-->
 
   <link href="build/main.css" rel="stylesheet">
+  <script src="aframe/aframe-master.js"></script>
+
+  <!--
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"></script>
+
+  -->
+
 
 </head>
-<body>
+<body style='margin : 0px; overflow: hidden;'>
 
   <!-- Ionic's root component and where the app will load -->
   <ion-app></ion-app>
+
+
 
   <!-- The polyfills js is generated during the build process -->
   <script src="build/polyfills.js"></script>
